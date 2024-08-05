@@ -8,11 +8,11 @@ var path = require("path")
 var app = express()
 
 app.use(express.static(path.join(__dirname, 'client/dist')))
-app.use(cors())
 
 
 app.get('/api/', (req, res)=>{
     res.send("Hello from backend")
+    res.header()
     console.log("Hello from frontend")
 })
 
